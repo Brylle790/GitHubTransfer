@@ -1,0 +1,76 @@
+@import url();
+
+.navbar {
+    background-color: #003F66; /* Custom background color */
+}
+.navbar-nav .nav-link {
+    color: white; /* Default link color */
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+.navbar-nav .nav-link:hover {
+    background-color: #45a049; /* Hover background color */
+    color: #fff; /* Hover text color */
+}
+.navbar-nav .nav-link.active {
+    background-color: #388E3C; /* Active background color */
+    color: #fff; /* Active text color */
+}
+
+
+.cart-icon {
+    position: relative;
+    display: inline-block;
+}
+.cart-badge {
+    position: absolute;
+    top: 10px; /* Adjust vertical position */
+    right: 9.5px; /* Adjust horizontal position */
+    transform: translate(50%, -50%); /* Ensures the badge aligns at the edge */
+    padding: 2px 6px; /* Fine-tune size */
+    font-size: 0.75rem; /* Small font for the badge */
+    border-radius: 50%; /* Makes it circular */
+    background-color: #dc3545; /* Bootstrap's danger color */
+    color: white;
+}
+
+.cart-section {
+    background-color: #002b5c;
+    color: white;
+    padding: 20px;
+    margin-top: 0;
+    position: fixed;
+    right: -300px;
+    top: 7.1vh; 
+    height: calc(100% - 55px);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: right 0.3s ease;
+    overflow: auto;
+}
+.cart-section.open {
+    right: 0;
+}
+.cart-item img {
+    width: 50px;
+    height: auto;
+}
+.cart-footer button {
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+}
+i {
+    width: 30px;
+}
+
+input .qty {
+    outline: none;
+    border: none !important;
+}
